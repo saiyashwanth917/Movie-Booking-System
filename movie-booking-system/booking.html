@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Showtime | CineBook</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">🎬 Cine<span>Book</span></a>
+  <nav><a href="index.html">Home</a><a class="active" href="index.html#movies">Movies</a></nav>
+  <button class="location-btn">📍 Bengaluru ▾</button>
+</header>
+
+<main class="booking-page">
+  <div class="back"><a href="index.html">← Back to movies</a></div>
+  <div id="bookingMovie" class="movie-summary"></div>
+
+  <section class="booking-card">
+    <div class="booking-step"><span class="step-current">1</span><span>Showtime</span><i></i><span>2</span><span>Seats</span><i></i><span>3</span><span>Confirm</span></div>
+    <h2>Choose a date</h2>
+    <div id="dateList" class="date-list"></div>
+    <h2>Choose a showtime</h2>
+    <div id="timeList" class="time-list"></div>
+    <button id="continueBtn" class="primary-btn full" disabled>Choose Seats →</button>
+  </section>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineBook | Movie Ticket Booking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">🎬 Cine<span>Book</span></a>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="#movies">Movies</a>
+      <a href="#how-it-works">How It Works</a>
+    </nav>
+    <button class="location-btn" id="locationBtn">📍 Bengaluru ▾</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR CINEMA, YOUR CHOICE</p>
+        <h1>Book your next<br><span>movie experience.</span></h1>
+        <p class="hero-text">Discover movies, choose your showtime, pick your seats and get your tickets in minutes.</p>
+        <a href="#movies" class="primary-btn">Explore Movies →</a>
+      </div>
+      <div class="hero-ticket">
+        <div class="ticket-glow"></div>
+        <div class="ticket-card">
+          <div class="ticket-top"><span>NOW SHOWING</span><span>🎟️</span></div>
+          <div class="ticket-poster"><img src="assets/pushpa2.webp" alt="Pushpa 2: The Rule"></div>
+          <div class="ticket-info"><strong>Interstellar</strong><span>IMAX • 7:30 PM</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="movies">
+      <div class="section-heading">
+        <div><p class="eyebrow">WHAT'S PLAYING</p><h2>Popular Movies</h2></div>
+        <div class="search-wrap"><input id="movieSearch" type="search" placeholder="Search movies..."> 🔎</div>
+      </div>
+      <div id="movieGrid" class="movie-grid"></div>
+    </section>
+
+    <section class="section how" id="how-it-works">
+      <p class="eyebrow">SIMPLE & FAST</p>
+      <h2>Book in 3 easy steps</h2>
+      <div class="steps">
+        <div class="step"><b>01</b><h3>Choose a movie</h3><p>Pick your favourite movie from what's currently playing.</p></div>
+        <div class="step"><b>02</b><h3>Select seats</h3><p>Choose your preferred showtime and available seats.</p></div>
+        <div class="step"><b>03</b><h3>Get your ticket</h3><p>Confirm your booking and view your digital ticket.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="logo">🎬 Cine<span>Book</span></div><p>Movie booking made simple.</p></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

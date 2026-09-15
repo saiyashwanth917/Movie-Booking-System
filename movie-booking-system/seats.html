@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Seats | CineBook</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="index.html">🎬 Cine<span>Book</span></a>
+  <nav><a href="index.html">Home</a><a class="active" href="index.html#movies">Movies</a></nav>
+  <button class="location-btn">📍 Bengaluru ▾</button>
+</header>
+
+<main class="booking-page">
+  <div class="back"><a href="booking.html">← Change showtime</a></div>
+  <section class="seat-layout-card">
+    <div class="booking-step"><span>✓</span><span>Showtime</span><i></i><span class="step-current">2</span><span>Seats</span><i></i><span>3</span><span>Confirm</span></div>
+    <div class="selected-show" id="selectedShow"></div>
+    <h2>Select your seats</h2>
+    <div class="screen">SCREEN</div>
+    <p class="tier-help">Seat prices are shown between each seat category. Select seats to see the exact total.</p>
+    <div id="seatMap" class="seat-map"></div>
+    <div class="seat-legend">
+      <span><i class="seat available"></i> Available</span>
+      <span><i class="seat selected"></i> Selected</span>
+      <span><i class="seat occupied"></i> Booked</span>
+    </div>
+  </section>
+
+  <aside class="price-card">
+    <h3>Booking Summary</h3>
+    <div id="seatSummary"></div>
+    <div class="price-row"><span>Tickets</span><strong id="ticketCount">0</strong></div>
+    <div class="price-row total"><span>Total</span><strong id="totalPrice">₹0</strong></div>
+    <button id="confirmBtn" class="primary-btn full" disabled>Confirm Booking</button>
+  </aside>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
